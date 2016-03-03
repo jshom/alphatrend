@@ -1,0 +1,2 @@
+# alphatrend
+(c) Jacob Shomstein
