@@ -1,0 +1,226 @@
+* {
+	font-family: 'Arvo', serif;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+    overflow-x: hidden;
+    background: black;
+}
+
+.theside {
+	margin: 0 !important;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	min-height: 100%;
+	width: 14%;
+	z-index: 200;
+	background: black;
+}
+
+.toplogo {
+	left: 20px;
+	position: fixed;
+}
+
+.sidelink {
+	width: 120%;
+	margin-left: -20px;
+	padding: 4px 14px;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.topside {
+	height: 30%;
+	position: relative;
+}
+
+.first {
+	font-weight: 700;
+}
+
+.logo {
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	margin: 0 auto;
+	right: 50%;
+	left: 50%;
+}
+
+.link-text {
+	font-size: 115%;
+	width: 120%;
+	right: 35%;
+	position: relative;
+}
+
+.links {
+	margin: 0 auto;
+	margin-left: 5px;
+	width: 11%;
+	position: fixed;
+	bottom: 30%;
+	top: 45%;
+	text-align: center;
+	height: auto;
+	text-align: right;
+	border-right: black 5px solid;
+}
+
+
+.banner {
+	width: 10000px;
+	height: 200px;
+	margin-top: -20px;
+	padding: 50px;
+	padding-left: 30%;
+	margin-left: -20px;
+}
+
+.banner-mobile {
+	width: 120%;
+	height: 150px;
+	margin-top: -20px;
+	padding: 20px;
+	padding-left: 0px;
+	margin-left: -20px;
+	text-align: center;
+}
+
+.banner h2 {
+	font-size: 7vh;
+}
+
+.nav-wrapper {
+	width: 100%;
+	height: 40%;
+}
+
+.button-collapse {
+	margin-left: 20px;
+}
+
+.brand-logo {
+	height: 35px;
+}
+
+.meat {
+	background: url('../../grey.png') top left repeat !important;
+	z-index: 1;
+	width: 200%;
+	height: 1100px;
+	padding-top: 50px;
+	position: relative;
+	left: 70px;
+	margin-bottom: -20px;
+}
+
+.main {
+	position: relative;
+	left: 7%;
+}
+
+.card-panel {
+	border: none;
+	box-shadow: none;
+}
+
+.blurb {
+	width: 80%;
+	margin: 0;
+	margin-bottom: 40px;
+	height: 300px !important;
+	margin-left: 0px;
+}
+
+.foot {
+	margin-left: 15%;
+	margin-top: 20px;
+}
+
+.foot h4 {
+	font-size: 20px;
+	color: #fff;
+}
+
+#hip {
+	margin-top: 40px;
+	font-size: 22px;
+	text-align: left;
+	margin-left: 35%;
+	color: white;
+	margin-bottom: -10px;
+}
+
+footer a {
+	color: #e1e1e1;
+	left: 2px;
+	position: relative;
+}
+
+.foot p {
+	font-size: 10px;
+}
+
+footer {
+	background: black;
+	background-size: 1600px 900px;
+	height: 200px;
+	position: relative;
+	width: 80%;
+	margin-bottom: -120px;
+}
+
+.themobilemeat {
+	background: #6e6c74;
+	margin-bottom: -50px;
+	padding-bottom: 20px;
+	position: relative;
+	bottom: 0;
+	top:10px;
+}
+
+#footer-mobile {
+	background: black;
+	width: 120%;
+	position: relative;
+	margin-top: 20px;
+	margin-left: -11px;
+	bottom: 0;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.mobile-h4 {
+	position: relative;
+	left: 25%;
+	padding-top: 20px;
+	font-weight: 600;
+}
+
+#footer-mobile h5 {
+	font-size: 15px;
+}
+
+#footer-mobile a {
+	font-size: 10px;
+	color: white;
+}
+
+#footer-mobile a i {
+	font-size: 12px;
+}
+
+/* THIS IS NOW THE PART FOR THE ADVERTISERS */
+
