@@ -1,5 +1,4 @@
-# alphatrend :shit:
-http://alphatrend.net 
+# Alphatrend http://Alphatrend.net 
 
 - [x] Set up front end
 - [x] Jquery and cool styles
