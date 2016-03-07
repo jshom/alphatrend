@@ -1,6 +1,5 @@
 # alphatrend :shit:
-http://alphatrend.net <br>
-<br>
+http://alphatrend.net 
 
 > WARNING: This is a work in progress.
 
