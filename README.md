@@ -6,5 +6,5 @@ http://alphatrend.net
 - [ ] Firebase integration
 - [ ] Release
 
-> WARNING: This is a work in progress.
+> WARNING: This is a work in progress.<br>
 **:copyright: Jacob Shomstein** <br>
