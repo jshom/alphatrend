@@ -1,49 +1,51 @@
 $(document).ready(function() {
 	Materialize.toast("<p>We believe in modern simplicity and ease, upload your block <br> quickly and easily</p>", 1000, 'teal rounded');
 	//Get all the variables
+	var section = "null";
 
-
-			//Firebase refrence
-			var firebase = new Firebase('https://alphatrend.firebaseio.com');
-
-			//Test
-			//firebase.set({'bo' :{yo :"yo"}});
-			//console.log(name + email + phone);
-
+	$('#tech').click(function() {
+		section = "tech";
+	});
+	$('#cooking').click(function() {
+		section = "cooking";
+	});
+	$('#sports').click(function() {
+		section = "sports";
+	});
+	$('#clothing').click(function() {
+		section = "clothing";
+	});
+			//WHEN YOU PAY
 			$('#pay').click(function() {
 				console.log('pay clicked!');
-
-
-
-
 
 				var name = $('#business_name').val(),
 						email = $('#business_email').val(),
 						phone = $('#business_phone').val(),
-						website = $('#business_wesbite').val(),
+						website = $('#business_website').val(),
 						featured = $('#block_featured').val(),
-						section = $('input[name=block_section]'),
 						text = $('#block_text').val(),
 						link = $('#block_link').val();
 
-				var business = {
-					"email" : [email],
-					"phone" : [phone],
-					"website" : [website],
-					"block" : {
-						"featured" : [featured],
-						"section" : [section],
-						"text" : [text],
-						"link" : [link]
-					}
-				};
-				//SEND TO FIREBASE
+				var comment = " Connect to Firebase, create business object, insert details, create block object, insert block details ";
 
-				firebase.set({[name] : {email : [email], phone: [phone], website: [website]}});
+				var nameref = new Firebase('https://alphatrend.firebaseio.com/businesses/');
 
-				console.log(business);
-				//firebase.set({business});
+				//Create business object
+				var busname = nameref.child(name);
 
+				//Insert all data
+				busname.child("business-name").set(name);
+				busname.child("business-email").set(email);
+				busname.child("business-phone").set(phone);
+				busname.child("business-website").set(website);
 
+				//Create business block
+				var busblock = busname.child('block');
+
+				busblock.child("featured").set(featured);
+				busname.child('block').child("section").set(section);
+				busname.child('block').child("product-text").set(text);
+				busname.child('block').child("product-link").set(link);
 			});
 });
