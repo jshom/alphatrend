@@ -17,7 +17,7 @@ $(document).ready(function() {
 	});
 			//WHEN YOU PAY
 			$('#pay').click(function() {
-				console.log('pay clicked!');
+				console.log('Pay clicked');
 
 				var name = $('#business_name').val(),
 						email = $('#business_email').val(),
