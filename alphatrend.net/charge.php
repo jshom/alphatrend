@@ -1,8 +1,9 @@
 <?php
   //requires
 
-  require_once('stripe');
+  require_once('./config.php');
 
+  //code
 
   echo "Your block has been paid for and is now being verified for publishing, the block should be online within 24 hours";
   if(isset($_POST)) {
