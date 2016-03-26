@@ -1,6 +1,7 @@
 {
 	"require" : {
-		"stripe/stripe-php": "3.*"
+		"stripe/stripe-php": "3.*",
+		"cloudinary/cloudinary_php": "dev-master"
 	}
 
 }

@@ -1,11 +1,8 @@
 <?php
   //requires
 
-  require_once('./config.php');
+  require_once('config.php');
 
-  //code
-
-  echo "Your block has been paid for and is now being verified for publishing, the block should be online within 24 hours";
   if(isset($_POST)) {
     //general details
     $img = $_POST['b_name'];
@@ -15,11 +12,10 @@
     exit("sorry, an error has occured");
   }
 
+  \Cloudinary::uploader();
+
   $comment = "STRIPE PAYMENT";
 
-  // Set your secret key: remember to change this to your live secret key in production
-  // See your keys here https://dashboard.stripe.com/account/apikeys
-  \Stripe\Stripe::setApiKey("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
 
   // Get the credit card details submitted by the form
   $token = $_POST['stripeToken'];
@@ -32,7 +28,7 @@
       "source" => $token,
       "description" => "Block on Alphatrend.net"
     ));
-    echo('all good');
+    echo "Your block has been paid for and is now being verified for publishing, the block should be online within 24 hours";
   } catch(\Stripe\Error\Card $e) {
     // The card has been declined
   }

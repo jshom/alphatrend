@@ -34,7 +34,7 @@
 </head>
 <body>
 	<script>
-		//$.cloudinary.config({ cloud_name: 'def9iqnm4', api_key: '139544278299624'});
+		$.cloudinary.config({ cloud_name: 'def9iqnm4', api_key: '139544278299624'});
 	</script>
 
 	<h2 class="white-text center headertext">Advertiser Corner</h2>
@@ -123,6 +123,8 @@
     			</div>
     		</div>
 
+				
+
       		<!-- Text -->
 
 	  		<div class="row">
@@ -151,7 +153,6 @@
 							    class="stripe-button"
 							    data-key="<?php echo $stripe['publishable_key']; ?>"
 							    data-image="https://pbs.twimg.com/profile_images/1284554204/ALPHA_ICON_00000.png"
-							    data-name="AlphaTrend.net"
 							    data-description="Ad Block ($5)"
 							    data-amount="500"
 							    data-locale="auto">
