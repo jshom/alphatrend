@@ -3,19 +3,10 @@
 
   require_once('config.php');
 
-  if(isset($_POST)) {
-    //general details
-    $img = $_POST['b_name'];
-
-    echo $img;
-  } else {
-    exit("sorry, an error has occured");
+  //Check for file
+  if (isset($_FILES['upload']) {
+    \Cloudinary\Uploader::upload($_FILES['upload']);
   }
-
-  \Cloudinary::uploader();
-
-  $comment = "STRIPE PAYMENT";
-
 
   // Get the credit card details submitted by the form
   $token = $_POST['stripeToken'];

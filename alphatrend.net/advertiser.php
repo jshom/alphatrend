@@ -109,21 +109,6 @@
       		</div>
 
 
-	      	<!-- IMG -->
-
-	      	<div class="row">
-	  			<div class="file-field input-field">
-	  				<div class="btn">
-	  					<span>Image</span>
-	  					<input type="file" name="block_image" class="cloudinary-fileupload" data-cloudinary-field="image_id">
-	      			</div>
-		  			<div class="file-path-wrapper">
-		  				<input class="file-path validate" type="text">
-      				</div>
-    			</div>
-    		</div>
-
-				
 
       		<!-- Text -->
 
@@ -146,8 +131,23 @@
 
       		<!-- Pay -->
 					<div id="pay">
-						<?php require_once('./config.php') ?>
+						<?php require_once('config.php') ?>
 						<form action="charge.php" method="POST">
+							<!-- IMG -->
+
+							<div class="row">
+							<div class="file-field input-field">
+								<div class="btn">
+									<span>Image</span>
+									<input type="file" name="upload" id="upload">
+									</div>
+								<div class="file-path-wrapper">
+									<input class="file-path validate" type="text">
+									</div>
+							</div>
+						</div>
+
+
 					  			<script
 							    src="https://checkout.stripe.com/checkout.js"
 							    class="stripe-button"
