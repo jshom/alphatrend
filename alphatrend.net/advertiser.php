@@ -144,7 +144,7 @@
 								<div class="btn">
 									<span>Image</span>
 									<input type="file" name="upload" id="upload" lass="cloudinary-fileupload" data-cloudinary-field="image_upload"
-       data-form-data="{ 'transformation': 'c_limit,h_800,w_600'}">
+       data-form-data="{ 'transformation': 'c_limit,h_200,w_600'}">
 									</div>
 								<div class="file-path-wrapper">
 									<input class="file-path validate" type="text">
