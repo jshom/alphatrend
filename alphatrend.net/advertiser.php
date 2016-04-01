@@ -33,6 +33,7 @@
 	<script src='cloudinary/jquery.cloudinary.js' type='text/javascript'></script>
 </head>
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>
 		$.cloudinary.config({ cloud_name: 'def9iqnm4', api_key: '139544278299624'});
 	</script>
@@ -136,10 +137,14 @@
 							<!-- IMG -->
 
 							<div class="row">
+								<script type="text/javascript">
+ 									$.cloudinary.config({"api_key":"139544278299624","cloud_name":"def9iqnm4"});
+								</script>
 							<div class="file-field input-field">
 								<div class="btn">
 									<span>Image</span>
-									<input type="file" name="upload" id="upload">
+									<input type="file" name="upload" id="upload" lass="cloudinary-fileupload" data-cloudinary-field="image_upload"
+       data-form-data="{ 'transformation': 'c_limit,h_800,w_600'}">
 									</div>
 								<div class="file-path-wrapper">
 									<input class="file-path validate" type="text">
@@ -165,7 +170,7 @@
 
 
 	<!-- Scripts -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 		<script src="assets/js/materialize.min.js"></script>
 		<script src="assets/js/vertscript.js"></script>
 	</body>

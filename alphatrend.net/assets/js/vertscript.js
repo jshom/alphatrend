@@ -47,5 +47,7 @@ $(document).ready(function() {
 				busname.child('block').child("section").set(section);
 				busname.child('block').child("product-text").set(text);
 				busname.child('block').child("product-link").set(link);
+
+				$("file-upload").cloudinary_fileupload();
 			});
 });
