@@ -11,14 +11,18 @@ $(document).ready(function(){
 
 	$(".button-collapse").sideNav();
 
-	var windsize = $(window).width();
-
 	Materialize.toast("Hi, the dev wishes you a nice day", 4000);
 
-	if ($(window).width() < 1100) {
-		$('.links').css('border-right', 'none');
-	} else {
-
-	}
+	setInterval(function () {
+		var windsize = $(window).width();
+		if (windsize < 1100) {
+			$('.links').css('border-right', 'none');
+		} else {
+			$('.links').css('border-width', '0');
+			$('.links').css('border-right', 'black 5px solid');
+			//console.log("BIGGER");
+		}
+		//console.log(windsize);
+	}, 100);
 
 });
