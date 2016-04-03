@@ -25,7 +25,8 @@ $(document).ready(function() {
 						website = $('#business_website').val(),
 						featured = $('#block_featured').val(),
 						text = $('#block_text').val(),
-						link = $('#block_link').val();
+						link = $('#block_link').val(),
+						uploadimg = $('#uploadimg').val().base64file();
 
 				var comment = " Connect to Firebase, create business object, insert details, create block object, insert block details ";
 
@@ -47,7 +48,8 @@ $(document).ready(function() {
 				busname.child('block').child("section").set(section);
 				busname.child('block').child("product-text").set(text);
 				busname.child('block').child("product-link").set(link);
+				busname.child('block').child("img").set(uploadimg);
 
-				$("file-upload").cloudinary_fileupload();
+				console.log(uploadimg);
 			});
 });

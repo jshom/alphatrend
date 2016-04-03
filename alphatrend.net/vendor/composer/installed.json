@@ -1,17 +1,17 @@
 [
     {
         "name": "stripe/stripe-php",
-        "version": "v3.11.0",
-        "version_normalized": "3.11.0.0",
+        "version": "v3.12.0",
+        "version_normalized": "3.12.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/stripe/stripe-php.git",
-            "reference": "830879e7984f22a9ed9085d674e5f8d5c4512fc6"
+            "reference": "7e18efb09bc8ec6a43c1705796e1e0b2ae6f0d21"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/stripe/stripe-php/zipball/830879e7984f22a9ed9085d674e5f8d5c4512fc6",
-            "reference": "830879e7984f22a9ed9085d674e5f8d5c4512fc6",
+            "url": "https://api.github.com/repos/stripe/stripe-php/zipball/7e18efb09bc8ec6a43c1705796e1e0b2ae6f0d21",
+            "reference": "7e18efb09bc8ec6a43c1705796e1e0b2ae6f0d21",
             "shasum": ""
         },
         "require": {
@@ -25,7 +25,7 @@
             "satooshi/php-coveralls": "~0.6.1",
             "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2016-03-22 20:40:11",
+        "time": "2016-03-31 21:40:54",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -57,37 +57,29 @@
         ]
     },
     {
-        "name": "cloudinary/cloudinary_php",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "name": "ktamas77/firebase-php",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/cloudinary/cloudinary_php.git",
-            "reference": "94582b6bc7d6c5b97f9aae441d7d25e6fd93ef76"
+            "url": "https://github.com/ktamas77/firebase-php.git",
+            "reference": "52477150d423e88103264915b53fc2b41b5a71c5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/94582b6bc7d6c5b97f9aae441d7d25e6fd93ef76",
-            "reference": "94582b6bc7d6c5b97f9aae441d7d25e6fd93ef76",
+            "url": "https://api.github.com/repos/ktamas77/firebase-php/zipball/52477150d423e88103264915b53fc2b41b5a71c5",
+            "reference": "52477150d423e88103264915b53fc2b41b5a71c5",
             "shasum": ""
         },
         "require": {
-            "ext-curl": "*",
-            "ext-json": "*",
             "php": ">=5.3.0"
         },
-        "require-dev": {
-            "phpunit/phpunit": "4.7.*"
-        },
-        "time": "2016-03-22 14:54:00",
+        "time": "2015-03-04 13:35:41",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src"
-            ],
-            "files": [
-                "src/Helpers.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -96,18 +88,16 @@
         ],
         "authors": [
             {
-                "name": "Cloudinary",
-                "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
+                "name": "Tamas Kalman",
+                "email": "ktamas77@gmail.com"
             }
         ],
-        "description": "Cloudinary PHP SDK",
-        "homepage": "https://github.com/cloudinary/cloudinary_php",
+        "description": "Firebase PHP Client",
+        "homepage": "https://github.com/ktamas77/firebase-php",
         "keywords": [
-            "cdn",
-            "cloud",
-            "cloudinary",
-            "image management",
-            "sdk"
+            "firebase",
+            "rest",
+            "wrapper"
         ]
     }
 ]

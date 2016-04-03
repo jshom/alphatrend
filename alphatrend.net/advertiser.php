@@ -6,34 +6,22 @@
 	<title>Alpha Market</title>
 	<meta name="description" content="Startups and Tastemakers mate here to provide eachother what they want, exposure, sales and new products.">
 	<meta name="author" content="Jacob Shomstein">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- Google Font -->
 	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
-	<!-- Materialize -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="assets/css/materialize.min.css" rel="stylesheet">
-
-	<!-- Ionic Icons -->
 	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-
-	<!-- Firebase CDN -->
+	<link href="assets/css/animate.css" rel="stylesheet">
 	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
-
-	<!-- Jquery CDN -->
 	<script src="assets/js/jquery.min.js"></script>
-
-	<!-- Custom CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
 	<link href="assets/css/advertisers.css" rel="stylesheet">
-
-	<!-- Cloudinary Business -->
 	<script src='cloudinary/jquery.ui.widget.js' type='text/javascript'></script>
 	<script src='cloudinary/jquery.iframe-transport.js' type='text/javascript'></script>
 	<script src='cloudinary/jquery.fileupload.js' type='text/javascript'></script>
 	<script src='cloudinary/jquery.cloudinary.js' type='text/javascript'></script>
 </head>
 <body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>
 		$.cloudinary.config({ cloud_name: 'def9iqnm4', api_key: '139544278299624'});
 	</script>
@@ -46,6 +34,9 @@
 			<!-- ------------------ -->
 
 			<h5 class="black-text">General Info</h3>
+
+			<form action="charge.php" method="POST" enctype="multipart/form-data">
+
 			<div class="row">
 				<div class="input-field col s12">
 					<input id="business_name" type="text" class="validate" required="true" name="b_name">
@@ -81,8 +72,8 @@
 
 	      	<div class="row">
 	  			<div class="input-field col s12">
-	  				<input type="checkbox" class="filled-in" id="block_featured" checked="checked" name="block_featured"/>
-	  				<label for="block_featured">Featured</label>
+	  				<input type="checkbox" class="filled-in" id="block_featured"  name="block_featured"/>
+	  				<label for="block_featured">Featured* (2$ for Featured section)</label>
         		</div>
       		</div>
 
@@ -109,9 +100,18 @@
         		</div>
       		</div>
 
-
-
       		<!-- Text -->
+					<div class="row">
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>Image</span>
+								<input type="file" name="block_image">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text">
+								</div>
+						</div>
+					</div>
 
 	  		<div class="row">
 	  			<div class="input-field col s12">
@@ -132,34 +132,18 @@
 
       		<!-- Pay -->
 					<div id="pay">
-						<?php require_once('config.php') ?>
-						<form action="charge.php" method="POST">
-							<!-- IMG -->
-
-							<div class="row">
-								<script type="text/javascript">
- 									$.cloudinary.config({"api_key":"139544278299624","cloud_name":"def9iqnm4"});
-								</script>
-							<div class="file-field input-field">
-								<div class="btn">
-									<span>Image</span>
-									<input type="file" name="upload" id="upload" lass="cloudinary-fileupload" data-cloudinary-field="image_upload"
-       data-form-data="{ 'transformation': 'c_limit,h_200,w_600'}">
-									</div>
-								<div class="file-path-wrapper">
-									<input class="file-path validate" type="text">
-									</div>
-							</div>
-						</div>
 
 
+
+									<p>click</p>
 					  			<script
 							    src="https://checkout.stripe.com/checkout.js"
 							    class="stripe-button"
-							    data-key="<?php echo $stripe['publishable_key']; ?>"
-							    data-image="https://pbs.twimg.com/profile_images/1284554204/ALPHA_ICON_00000.png"
-							    data-description="Ad Block ($5)"
-							    data-amount="500"
+							    data-key="pk_test_hEaMQmVaXP0EfNhoaXR06BTl"
+							    data-image="/"
+							    data-name="AlphaMarket"
+							    data-description="Block ($5)"
+							    data-amount="2000"
 							    data-locale="auto">
 								</script>
 						</form>
@@ -170,7 +154,7 @@
 
 
 	<!-- Scripts -->
-
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="assets/js/materialize.min.js"></script>
 		<script src="assets/js/vertscript.js"></script>
 	</body>

@@ -1,6 +1,7 @@
 {
 	"require" : {
-		"stripe/stripe-php": "3.*"
+		"stripe/stripe-php": "3.*",
+		"ktamas77/firebase-php": "2.0.0"
 	}
 
 }
