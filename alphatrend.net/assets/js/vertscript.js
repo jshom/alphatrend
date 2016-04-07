@@ -48,8 +48,6 @@ $(document).ready(function() {
 				busname.child('block').child("section").set(section);
 				busname.child('block').child("product-text").set(text);
 				busname.child('block').child("product-link").set(link);
-				busname.child('block').child("img").set(uploadimg);
-
-				console.log(uploadimg);
+				busname.child('block').child("click").set("0");
 			});
 });
