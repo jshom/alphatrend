@@ -22,7 +22,17 @@ $(document).ready(function(){
 			$('.links').css('border-right', 'black 5px solid');
 			//console.log("BIGGER");
 		}
-		//console.log(windsize);
+		console.log(windsize);
 	}, 100);
 
+	/*setInterval(function () {
+		var windsize = $(window).width();
+		if (windsize < 900 && windsize > 385) {
+			$('.mobileblock').css('height', '270px');
+			console.log("cut");
+		} else{
+			$('.mobileblock').css('height', '300px');
+			console.log("grow");
+		}
+	}, 100);*/
 });
