@@ -25,14 +25,15 @@ $(document).ready(function(){
 		console.log(windsize);
 	}, 100);
 
-	/*setInterval(function () {
+	setInterval(function () {
 		var windsize = $(window).width();
-		if (windsize < 900 && windsize > 385) {
-			$('.mobileblock').css('height', '270px');
-			console.log("cut");
+		if (windsize < 950 && windsize > 385) {
+			$('.desk-link').css('display', 'none');
+			//console.log("hide");
 		} else{
-			$('.mobileblock').css('height', '300px');
-			console.log("grow");
+			$('.desk-link').css('display', 'inline');
+			//console.log("show");
 		}
-	}, 100);*/
+	}, 100);
+
 });
