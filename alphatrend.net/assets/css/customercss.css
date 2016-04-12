@@ -98,6 +98,10 @@ body, html {
 	text-align: center;
 }
 
+.banner-mobile h2 {
+	margin-right: 18px;
+}
+
 .icon-desktop {
 	margin: 0 8px;
 	font-size: 23px;
@@ -224,7 +228,7 @@ footer {
 
 .mobile-h4 {
 	position: relative;
-	left: 25%;
+	right: 6%;
 	padding-top: 20px;
 	font-weight: 600;
 }
