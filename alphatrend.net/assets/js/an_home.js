@@ -1,8 +1,8 @@
 const index = new Firebase('http://alphatrend.firebaseio.com/analytics/home'),
         b1 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block1'),
-        b2 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block1'),
-        b3 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block1'),
-        b4 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block1');
+        b2 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block2'),
+        b3 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block3'),
+        b4 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block4');
 
 var count1 = 0,
     count2 = 0,
@@ -38,6 +38,7 @@ $('.block2').click(function () {
     console.log(count1);
   }
 });
+
 $('.block3').click(function () {
   count3++;
   if (count3 == 0 ) {
@@ -49,6 +50,7 @@ $('.block3').click(function () {
     console.log(count1);
   }
 });
+
 $('.block4').click(function () {
   count4++;
   if (count4 == 0 ) {
