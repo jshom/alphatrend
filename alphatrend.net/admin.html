@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>admin | alphatrend</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+  <script type="text/javascript">
+
+    const fire = new Firebase('http://alphatrend.firebaseio.com');
+
+    $(document).keypress(function(e) {
+      if(e.which == 13) {
+        var usr = $('#usr').val();
+        var pas = $('#pswd').val();
+      }
+      fire.authWithPassword({
+        "email": usr,
+        "password": pas
+        }, function(error, authData) {
+        if (error) {
+          console.log("Login Failed!", error);
+        } else {
+          console.log("Authenticated successfully with payload:", authData);
+          $('input').fadeOut();
+          var vdata = 'null';
+
+          fire.on('value', function(snap) {
+            console.log(snap);
+            vdata = snap;
+          })
+
+          $(document).append(vdata);
+        }
+      });
+    });
+  </script>
+  <div class="container">
+    <input type="text" id="usr">
+    <input type="password" id="pswd">
+  </div>
+  </body>
+</html>
