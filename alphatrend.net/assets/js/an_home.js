@@ -1,13 +1,13 @@
-const index = new Firebase('http://alphatrend.firebaseio.com/analytics/home'),
-        b1 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block1'),
-        b2 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block2'),
-        b3 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block3'),
-        b4 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block4');
-
+const index = new Firebase('http://alphatrend.firebaseio.com/analytics/home');
+/*var b1 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block1');
+var b2 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block2');
+var b3 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block3');
+var b4 = new Firebase('http://alphatrend.firebaseio.com/analytics/home/block4');*/
+/*
 var count1 = 0,
     count2 = 0,
     count3 = 0,
-    count4 = 0;
+    count4 = 0;*/
 
 //overall page count
 index.transaction(function(currentData) {
@@ -15,7 +15,7 @@ index.transaction(function(currentData) {
 });
 
 //individual blocks
-$('.block1').click(function () {
+/*$('.block1').click(function () {
   count1++;
   if (count1 == 0 ) {
     b1.transaction(function(currentData) {
@@ -61,4 +61,4 @@ $('.block4').click(function () {
     console.log('more than one click');
     console.log(count4);
   }
-});
+});*/
