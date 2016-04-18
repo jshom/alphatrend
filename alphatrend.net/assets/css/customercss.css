@@ -48,6 +48,12 @@ body, html {
 	font-weight: 700;
 }
 
+#thelogo {
+	position: relative;
+	top: -28px;
+	right: 1px;
+}
+
 .logo {
 	height: 50px;
 	width: 100%;
@@ -67,13 +73,13 @@ body, html {
 
 .links {
 	margin: 0 auto;
-	margin-left: 5px;
+	margin-left: -2px;
 	width: 11%;
 	position: fixed;
 	bottom: 30%;
 	top: 45%;
 	text-align: center;
-	height: auto;
+	height: 200px;
 	text-align: right;
 	border-right: black 5px solid;
 }
@@ -250,4 +256,23 @@ footer {
 	font-size: 12px;
 }
 
+.fixlogocenter {
+	position: relative;
+	margin-left: -5px;
+}
+
+.fixlogocentersmall {
+	position: relative;
+	margin-left: -20%;
+}
+
+.fixlogocentersmaller {
+	position: relative;
+	margin-left: -30%;
+}
+
+.fixlogocentersmallerer {
+	position: relative;
+	margin-left: -40%;
+}
 /* THIS IS NOW THE PART FOR THE ADVERTISERS */

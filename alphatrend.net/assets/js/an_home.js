@@ -9,11 +9,17 @@ var count1 = 0,
     count3 = 0,
     count4 = 0;*/
 
-//overall page count
-index.transaction(function(currentData) {
-  return currentData+1;
-});
 
+index.authAnonymously(function(error, authData) {
+  if (error) {
+    console.log('messed up');
+  } else {
+    console.log('WELCOME TO ALPHATREND');
+    index.transaction(function(currentData) {
+      return currentData+1;
+    });
+  }
+})
 //individual blocks
 /*$('.block1').click(function () {
   count1++;
