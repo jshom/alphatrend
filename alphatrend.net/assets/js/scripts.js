@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 	$(".button-collapse").sideNav();
 
-	Materialize.toast("Welcome, we launch May 1st (this is beta for now)", 4000);
+	Materialize.toast("Welcome, we launch May 1st", 4000);
 
 	setInterval(function () {
 		var windsize = $(window).width();
