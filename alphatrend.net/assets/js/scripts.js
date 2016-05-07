@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 	$(".button-collapse").sideNav();
 
-	Materialize.toast("Welcome, we launch May 1st", 4000);
+	Materialize.toast("Welcome (soft launch state)", 4000);
 
 	setInterval(function () {
 		var windsize = $(window).width();
@@ -99,4 +99,15 @@ $(document).ready(function(){
 		})
 	});
 
+
+	//PERSONAL EDITS
+
+
+	//Firefly Pic Image change
+/*$('#fireflypic').attr('src', 'assets/img/fire2.jpg').delay(2000).attr('src', 'assets/img/fire3.jpg').delay(2000).attr('src', 'assets/img/fire1.jpg').delay(2000);
+
+	setInterval(function () {
+		$('#fireflypic').attr('src', 'assets/img/fire2.jpg').delay(2000).attr('src', 'assets/img/fire3.jpg').delay(2000).attr('src', 'assets/img/fire1.jpg').delay(2000);
+		console.log('woop');
+	}, 000)*/
 });

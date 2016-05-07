@@ -20,8 +20,7 @@
 	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 	<link href="assets/css/materialize.min.css" rel="stylesheet">
 	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-	<link href="assets/css/animate.css" rel="stylesheet">
-	<script src="assets/js/wow.min.js"></script>
+
 	<link href="assets/css/customercss.css" rel="stylesheet">
 </head>
 <body>
@@ -96,9 +95,12 @@
 					<div class="col m3 s12 main">
 						<div class="card blurb medium hoverable">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src="assets/img/fireflypick.jpg" style="position: relative; bottom: 40px;" class="activator">
-							</div>
-							<div class="card-content hoverable" style="padding-bottom: 30px;">
+								<div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-pause-on-hover="false" data-cycle-speed="65" data-cycle-swipe='true' data-cycle-swipe-fx='scrollHorz' data-cycle-loader="wait">
+									<img src="assets/img/fire1.jpg" class="activator" class="fireflypic">
+									<img src="assets/img/fire2.jpg" class="activator" class="fireflypic">
+									<img src="assets/img/fire3.jpg" class="activator" class="fireflypic"></div>
+								</div>
+							<div class="card-content" style="padding-bottom: 30px;">
 								<span class="card-title activator grey-text text-darken-4 bold">Firefly Pick<i class="ion-android-expand right"></i></span>
 								<p><a class="desk-link" href="http://fireflypick.com">fireflypick.com</a></p>
     					</div>
@@ -114,18 +116,18 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 					<div class="col m3 s12 main">
 						<div class="card blurb medium hoverable">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src="sample.jpg"class="activator">
+								<img src="assets/img/pictarwhite.jpg"class="activator">
 
 							</div>
-							<div class="card-content hoverable" style="padding-bottom: 30px;">
-								<span class="card-title activator grey-text text-darken-4">The Original Cutlery<i class="ion-android-expand right"></i></span>
-								<p><a class="desk-link" href="#">Link to website</a></p>
+							<div class="card-content" style="padding-bottom: 30px;">
+								<span class="card-title activator grey-text text-darken-4">Pictar : iPhone Grip<i class="ion-android-expand right"></i></span>
+								<p><a class="desk-link" href="https://www.kickstarter.com/projects/mymiggo/pictar-probably-the-best-iphone-camera-grip-ever-b">Pictar</a></p>
     						</div>
 
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Something<i class="ion-android-close right"></i></span>
-								<p>Banh mi pour-over meditation swag. Normcore literally man braid, pour-over 90's craft beer shoreditch bitters jean shorts organic post-ironic fap banh mi everyday carry etsy. Viral twee chartreuse truffaut umami organic beard knausgaard humblebrag microdosing. Celiac schlitz bushwick, banjo lumbersexual paleo tilde raw denim farm-to-table organic drinking vinegar kogi fashion axe mumblecore try-hard. +1 master cleanse mlkshk, sartorial artisan synth chillwave beard pickled offal authentic pitchfork wayfarers deep v irony. Green juice asymmetrical craft beer bespoke vinyl, irony gastropub franzen pinterest cronut tote bag. Meh irony brunch, skateboard meditation church-key iPhone.</p>
-								<a href="#">link to website</a>
+								<span class="card-title grey-text text-darken-4">Pictar : iPhone Grip<i class="ion-android-close right"></i></span>
+								<p>The iPhone is an amazing design icon, and we as designers are full of admiration for the people who brought it to the world - but let's face it: as a camera, it's nowhere near the comfort, safe feel and familiar grip of a traditional camera. So the second task we undertook - after developing advanced controls - was to design an ergonomic grip that would sit comfortably in one hand and let you take one-handed shots while holding it out the window of a speeding jeep. And we believe we did it! </p>
+								<a href="https://www.kickstarter.com/projects/mymiggo/pictar-probably-the-best-iphone-camera-grip-ever-b">Pictar</a>
     						</div>
 						</div>
 					</div>
@@ -139,8 +141,8 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 								<img src="sample.jpg"class="activator">
 
 							</div>
-							<div class="card-content hoverable" style="padding-bottom: 30px;">
-								<span class="card-title activator grey-text text-darken-4">The Original Cutlery<i class="ion-android-expand right"></i></span>
+							<div class="card-content" style="padding-bottom: 30px;">
+								<span class="card-title activator grey-text text-darken-4">Product A<i class="ion-android-expand right"></i></span>
 								<p><a class="desk-link" href="#">Link to website</a></p>
     						</div>
 
@@ -157,8 +159,8 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 								<img src="sample.jpg"class="activator">
 
 							</div>
-							<div class="card-content hoverable" style="padding-bottom: 30px;">
-								<span class="card-title activator grey-text text-darken-4">The Original Cutlery<i class="ion-android-expand right"></i></span>
+							<div class="card-content" style="padding-bottom: 30px;">
+								<span class="card-title activator grey-text text-darken-4">Product A<i class="ion-android-expand right"></i></span>
 								<p><a class="desk-link" href="#">Link to website</a></p>
     						</div>
 
@@ -186,15 +188,14 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 							</div>
 							<div class="col s3">
 								<h4 style="">Share</h4>
-								<a style="font-size: 12px;" href="facebook.com">Facebook</a><br>
-								<a style="font-size: 12px;" href="facebook.com">Twitter</a><br>
-								<a style="font-size: 12px;" href="facebook.com">Google Plus</a>
+								<a style="font-size: 12px;" href="https://www.facebook.com/thealphatrend/">Facebook</a><br>
+								<a style="font-size: 12px;" href="https://twitter.com/the_alphatrend">Twitter</a><br>
+								<a style="font-size: 12px;" href="https://plus.google.com/u/0/b/111250466287884332393/111250466287884332393">Google Plus</a>
 							</div>
 							<div class="col s3">
-								<h4>Legal</h4>
-								<a href="#">Disclaimer</a><br>
-								<a href="#">Terms &amp; Conditions</a><br>
-
+								<h4>More</h4>
+								<a href="https://docs.google.com/forms/d/1e9KIyUJbD2cnHMoknemSVDlS1VM2cvqZp72VZOTg9_M/viewform">Feedback</a><br>
+								<a href="terms">Terms &amp; Conditions</a><br>
 							</div>
 						</div>
 					</div>
@@ -212,7 +213,10 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 			<!-- cards -->
 			<div class="card" style="margin: 0 20px; margin-top: 40px; margin-bottom: 40px;">
     		<div class="card-image waves-effect waves-block waves-light">
-      		<img class="activator" src="assets\img\fireflypick.jpg">
+					<div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-pause-on-hover="false" data-cycle-speed="65" data-cycle-swipe='true' data-cycle-swipe-fx='scrollHorz' data-cycle-loader="wait">
+						<img src="assets/img/fire1.jpg" class="activator" class="fireflypic">
+						<img src="assets/img/fire2.jpg" class="activator" class="fireflypic">
+						<img src="assets/img/fire3.jpg" class="activator" class="fireflypic"></div>
     		</div>
     		<div class="card-content" style="height: 80px;">
       		<span class="card-title activator grey-text text-darken-4">Firefly Pick</span>
@@ -222,22 +226,22 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
       		<span class="card-title grey-text text-darken-4">Firefly Pick<i class="ion-android-close right"></i></span>
       		<p>The Firefly Pick is an exciting motion-sensing LED guitar pick that creates a rhythmic light show synchronized to your music as you play. Its sophisticated computer and sensor array responds to your unique playing style, creating a brilliant visual effect. Built for years of play with highly durable polycarbonate and a USB rechargeable lithium ion battery.
 Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and a variety of colors</p>
-					<a href="http://fireflypick.com">Link to website</a>
+					<a href="http://fireflypick.com">fireflypick.com</a>
     		</div>
   		</div>
 			<!-- card2 -->
 			<div class="card" style="margin: 20px; margin-bottom: 40px;">
     		<div class="card-image waves-effect waves-block waves-light">
-      		<img class="activator" src="sample.jpg">
+      		<img class="activator" src="assets/img/pictarwhite.jpg">
     		</div>
     		<div class="card-content" style="height: 80px;">
-      		<span class="card-title activator grey-text text-darken-4">The Original Cutlery</span>
+      		<span class="card-title activator grey-text text-darken-4">Pictar : iPhone Grip</span>
       		<p></p>
     		</div>
     		<div class="card-reveal">
-      		<span class="card-title grey-text text-darken-4">The Original Cutlery<i class="ion-android-close right"></i></span>
-      		<p>Taxidermy 90's thundercats, wayfarers bespoke readymade kinfolk trust fund keffiyeh paleo vice farm-to-table flannel. Hella selfies banjo, PBR&B pork belly tilde affogato. Banh mi art party quinoa, meditation heirloom everyday carry offal dreamcatcher hashtag skateboard polaroid stumptown fingerstache narwhal. Williamsburg messenger bag polaroid fap, craft beer poutine 90's. 8-bit freegan meditation fashion axe, vice occupy polaroid cred photo booth marfa waistcoat 90's retro hoodie put a bird on it. Hashtag migas mlkshk, tote bag artisan kinfolk quinoa skateboard poutine. Mumblecore umami banh mi fap tattooed literally artisan, keytar fashion axe aesthetic mixtape.</p>
-					<a href="#">Link to website</a>
+      		<span class="card-title grey-text text-darken-4">Pictar : iPhone Grip<i class="ion-android-close right"></i></span>
+      		<p>The iPhone is an amazing design icon, and we as designers are full of admiration for the people who brought it to the world - but let's face it: as a camera, it's nowhere near the comfort, safe feel and familiar grip of a traditional camera. So the second task we undertook - after developing advanced controls - was to design an ergonomic grip that would sit comfortably in one hand and let you take one-handed shots while holding it out the window of a speeding jeep. And we believe we did it! </p>
+					<a href="https://www.kickstarter.com/projects/mymiggo/pictar-probably-the-best-iphone-camera-grip-ever-b">Pictar</a>
     		</div>
   		</div>
 			<!-- card3 -->
@@ -246,11 +250,11 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
       		<img class="activator" src="sample.jpg">
     		</div>
     		<div class="card-content" style="height: 80px;">
-      		<span class="card-title activator grey-text text-darken-4">The Original Cutlery</span>
+      		<span class="card-title activator grey-text text-darken-4">Product A</span>
       		<p></p>
     		</div>
     		<div class="card-reveal">
-      		<span class="card-title grey-text text-darken-4">The Original Cutlery<i class="ion-android-close right"></i></span>
+      		<span class="card-title grey-text text-darken-4">Product A<i class="ion-android-close right"></i></span>
       		<p>Pitchfork ennui ethical, lumbersexual kinfolk crucifix tattooed artisan tofu shabby chic. Roof party cray celiac, kogi tattooed pitchfork skateboard slow-carb next level yr hammock retro everyday carry ramps. Tilde gentrify PBR&B pork belly food truck. Truffaut flannel retro banh mi quinoa next level. Kale chips literally waistcoat twee. Cornhole heirloom polaroid celiac XOXO ugh, shabby chic craft beer ethical 8-bit. Chicharrones marfa kale chips, franzen heirloom mumblecore post-ironic tofu green juice vegan.</p>
 					<a href="#">Link to website</a>
     		</div>
@@ -261,11 +265,11 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
       		<img class="activator" src="sample.jpg">
     		</div>
     		<div class="card-content" style="height: 80px;">
-      		<span class="card-title activator grey-text text-darken-4">The Original Cutlery</span>
+      		<span class="card-title activator grey-text text-darken-4">Product A</span>
       		<p></p>
     		</div>
     		<div class="card-reveal">
-      		<span class="card-title grey-text text-darken-4">The Original Cutlery<i class="ion-android-close right"></i></span>
+      		<span class="card-title grey-text text-darken-4">Product A<i class="ion-android-close right"></i></span>
       		<p>8-bit franzen normcore, mustache butcher raw denim kickstarter kinfolk. Cronut butcher everyday carry, slow-carb whatever fap put a bird on it typewriter tote bag. Intelligentsia shoreditch celiac church-key. Thundercats slow-carb marfa, knausgaard polaroid lumbersexual four dollar toast irony messenger bag iPhone humblebrag cred crucifix chia portland. Disrupt pop-up literally chillwave knausgaard lumbersexual. Thundercats try-hard semiotics sriracha. Church-key pop-up plaid, irony slow-carb occupy deep v williamsburg man braid 8-bit.</p>
 					<a href="#">Link to website</a>
     		</div>
@@ -281,14 +285,14 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 					</div>
 					<div class="col s4" style="position: relative; left: 10px;">
 						<h5 style="font-size: 20px;">Share</h5>
-						<a style="font-size: 12px;" href="http://facebook.com">Facebook</a><br>
-						<a style="font-size: 12px;" href="http://facebook.com">Twitter</a><br>
-						<a style="font-size: 12px;" href="http://facebook.com">Google Plus</a>
+						<a style="font-size: 12px;" href="https://www.facebook.com/thealphatrend/">Facebook</a><br>
+						<a style="font-size: 12px;" href="https://twitter.com/the_alphatrend">Twitter</a><br>
+						<a style="font-size: 12px;" href="https://plus.google.com/u/0/b/111250466287884332393/111250466287884332393">Google Plus</a>
 					</div>
 					<div class="col s4">
-						<h5 style="font-size: 20px !important">Legal</h5>
-						<a style="font-size: 12px;" href="#">Disclaimer</a><br>
-						<a style="font-size: 12px;" href="#">Terms &amp; <br>Conditions</a><br>
+						<h5 style="font-size: 20px !important">More</h5>
+						<a style="font-size: 12px;" href="https://docs.google.com/forms/d/1e9KIyUJbD2cnHMoknemSVDlS1VM2cvqZp72VZOTg9_M/viewform">Feedback</a><br>
+						<a style="font-size: 12px;" href="terms">Terms &amp; <br>Conditions</a><br>
 					</div>
 				</div>
 			</div>
@@ -297,6 +301,7 @@ Available in 3 light motion styles - Classic, Duo, and Insanity (Pictured) - and
 
 	<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 		<script src="assets/js/materialize.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
 
